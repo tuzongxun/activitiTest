@@ -1,0 +1,29 @@
+<div id="logdiv1" ng-init="init();">  
+   <p style="font-size:24px;margin:3px">历史任务列表</p>
+   <center> 
+   <table border="1px" style="margin-top:1px;width:87%;font-size:18px;text-align:center;margin-top:1px;margin-left:2px;position:relative;float:left;" cellSpacing="0px" cellPadding="0px">
+      <tr style="background-color:#ccc">
+         <td>类型</td>
+         <td>ID</td>
+         <td>NAME</td>
+         <td>流程实例Id</td>
+         <td>开始时间</td>
+         <td>受理人</td>
+         <td>完成时间</td>
+         <td>操作</td>
+      </tr>
+      <tr ng-repeat="task in taskList | orderBy:'id'" >
+         <td>{{task.taskType}}</td>
+         <td>{{task.id}}</td>
+         <td>{{task.name}}</td>
+         <td>{{task.processInstanceId}}</td>
+         <td>{{task.startTime | date:"yyyy-MM-dd HH:mm:ss"}}</td>
+         <td>{{task.assignee}}</td>
+         <td>{{task.endTime | date:"yyyy-MM-dd HH:mm:ss"}}</td>
+         <td><a href="script:;" ng-click="review(task)">查看</a>
+         </td>
+      </tr>
+   </table>  
+   <div id="review"></div>
+   </center> 
+</div>  

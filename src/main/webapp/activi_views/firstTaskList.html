@@ -1,0 +1,35 @@
+
+<div id="logdiv1" ng-init="init();">  
+   <p style="font-size:22px;margin:3px">我的申请（未提交）</p>
+   <center> 
+   <table border="1px" style="margin-top:1px;width:87%;font-size:14px;text-align:center;margin-top:1px;margin-left:2px;position:relative;float:left;" cellSpacing="0px" cellPadding="0px">
+      <tr style="background-color:#ccc">
+         <td>类型</td>
+         <td>ID</td>
+         <td>NAME</td>
+         <td>ProcessIntanceId</td>
+         <td>ProcessDefId</td>
+         <td>formKey</td>
+         <td>创建时间</td>
+         <td>申请人</td>
+         <td>操 作</td>
+      </tr>
+      <tr ng-repeat="task in taskList | orderBy:'id'" >
+         <td>{{task.deploymentName}}</td>
+         <td>{{task.id}}</td>
+         <td>{{task.name}}</td>
+         <td>{{task.processInstanceId}}</td>
+         <td>{{task.processDefId}}</td>
+         <td>{{task.formKey}}</td>
+         <td>{{task.createTime | date:"yyyy-MM-dd HH:mm:ss"}}</td>
+         <td>{{task.assignee}}</td>
+         <td><a href="script:;" ng-click="findDetail(task)">查看</a>&nbsp;
+             <a href="script:;" ng-click="completeTaskTo(task)">处理任务</a>&nbsp;
+         </td>
+      </tr>
+   </table>  
+   <div id="findDetail"></div>
+   <div id="comTask"></div>
+   </center> 
+</div>  
+ 

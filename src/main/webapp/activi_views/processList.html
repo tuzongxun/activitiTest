@@ -1,0 +1,31 @@
+  
+<div id="logdiv1" ng-init="init();">  
+   <p style="font-size:24px;margin:3px">流程列表</p>
+   <center>
+   <table border="1px" style="margin-top:1px;width:87%;font-size:14px;text-align:center;margin-top:1px;margin-left:2px;position:relative;float:left;" cellSpacing="0px" cellPadding="0px">
+      <tr style="background-color:#ccc">
+         <td>ID</td>
+         <td>NAME</td>
+         <td>DeploymentID</td>
+         <td>KEY</td>
+         <td>版本</td>
+         <td>resourceName</td>
+         <td>DiagramResourceName</td>
+         <td>操 作</td>
+      </tr>
+      <tr ng-repeat="process in processList | orderBy:'id'" >
+         <td>{{process.id}}</td>
+         <td>{{process.name}}</td>
+         <td>{{process.deploymentId}}</td>
+         <td>{{process.key}}</td>
+         <td>{{process.version}}</td>
+         <td>{{process.resourceName}}</td>
+         <td>{{process.diagramResourceName}}</td>
+         <td><a href="script:;" ng-click="toProcess(process)">启动</a>&nbsp;
+         <a href="script:;" ng-click="deleteProcess(process)">删除</a>&nbsp;
+         </td>
+      </tr>
+   </table>  
+   <div id="handleTemplate" ></div>
+   </center>  
+</div>  

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>htmlTest</title>
+	<link rel="stylesheet" type="text/css" href="../my_css/test.css">
+	<script type="text/javascript" src="../my_js/test.js"></script>
+</head>
+<body>
+    <div id="naDiv0">
+        <img id="naImg" alt="nagiv" src="../images/activiti.png" >
+            <ul id="naUl0" >
+               <li ><a href="#" onclick="formManage();" onmouseover="showDiv1();" onmouseout="hideDiv1();">表单管理</a></li>
+               <li> | </li>
+               <li onmouseover="showDiv2();" onmouseout="hideDiv2();"><a href="#" onclick="proManage();">流程管理</a></li>
+               <li> | </li>
+               <li><a href="#" onclick="toTest();">测试页面</a></li>
+            </ul>
+    		
+    </div>
+    <div id="naDiv1" style="display:none" onfocus="showDiv11();" onmouseout="hideDiv11();">
+     <ul id="naUl1">
+        <li onfocus="showDiv111();" onmouseout="hideDiv111();"><a href="#" onclick="toAdd();" >新增表单</a></li>
+        <li onclick="formList();" onfocus="showDiv111();" onmouseout="hideDiv111();"><a href="#" >表单列表</a></li>
+     </ul>
+    		
+    </div>
+     <div id="naDiv2" style="display:none" onfocus="showDiv22();" onmouseout="hideDiv22();">
+     <ul id="naUl2">
+        <li onfocus="showDiv222();" onmouseout="hideDiv222();"><a href="#" onclick="toAdd();" >新增表单</a></li>
+        <li onclick="formList();" onfocus="showDiv222();" onmouseout="hideDiv222();"><a href="#" >表单列表</a></li>
+     </ul>
+    		
+    </div>
+    <div id="parentDiv">
+    	<div id="subDiv1">
+    		
+    	</div>
+        <div id="subDiv2">
+        	
+        </div>
+    </div>
+</body>
+</html>

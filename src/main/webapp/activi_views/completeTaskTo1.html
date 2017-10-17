@@ -1,0 +1,31 @@
+<div style="margin-top:20px;margin-left:200px;background-color:#ccf;height:550px;width:50%;font-size:18px;position:relative;float:left;">  
+   <center> 
+   <p style="font-size:24px;margin-top:10px">处理当前任务</p>
+               类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：<input ng-model="task.taskType" readonly="readonly" style="background-color:#9cf"></input>
+      </br>  
+      </br>
+      NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：<input ng-model="task.name" readonly="readonly" style="background-color:#9cf"></input>
+      </br>  
+      </br>
+               任&nbsp;&nbsp;务&nbsp;&nbsp;ID&nbsp;：<input ng-model="task.id" readonly="readonly" style="background-color:#9cf"></input>
+      </br>  
+      </br>  
+      ProcessIntanceId：<input ng-model="task.processInstanceId" readonly="readonly" style="background-color:#9cf"></input>
+      </br>  
+      </br>
+      ProcessDefId&nbsp;&nbsp;&nbsp;：<input ng-model="task.processDefId" readonly="readonly" style="background-color:#9cf"></input>
+      </br>  
+      </br>
+               创&nbsp;建&nbsp;时&nbsp;间&nbsp;：<input ng-model="task.createTime" readonly="readonly" style="background-color:#9cf"></input>
+      </br>  
+      </br>
+               申&nbsp;&nbsp;请&nbsp;&nbsp;人&nbsp;：<input ng-model="task.assignee" readonly="readonly" style="background-color:#9cf"></input>
+      </br>  
+      <p id="comDiv"></p> 
+      </br>
+      <input style="font-size:22px;cursor:pointer" type="button" value="处理任务" ng-click="completeTask(task);">  
+        &nbsp;&nbsp;&nbsp;
+      <input style="font-size:22px;cursor:pointer" type="button" value="返回"> 
+   </center> 
+</div>  
+ 

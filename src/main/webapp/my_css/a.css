@@ -1,0 +1,65 @@
+a:link{
+	text-decoration:none;
+	color:black;
+}
+
+a:visited{
+	color:blue;
+}
+
+a:hover{
+	color:red;
+}
+
+a:active{
+	color:orange;
+	}
+	
+#firUl{
+	padding:0;
+    box-sizing:border-box;
+    /*background-color:#EBE7E7; */
+    margin:0;
+}
+
+
+#firUl li{
+	list-style-type: none; 
+    /**display: inline;
+    float:left; */
+    height:auto;
+    weight:300px;
+    text-color:#2F2E2E;
+    background-color:#EAE3EA;
+    text-align:center;
+    padding:5px;
+    /**margin-top:3px;*/
+}
+
+#firUl li:hover{
+    background-color:#CEC9CE;
+}
+
+#create{
+	/**
+	-moz-border-radius-topleft:6px;
+    右上角
+    -moz-border-radius-topright:6px;
+    左下角
+    -moz-border-radius-bottomleft:6px;
+    右下角
+    -moz-border-radius-bottomright:6px;
+    */
+    border:2px solid;
+    border-radius:0.5em;
+}
+#login{
+	 border:2px solid;
+    border-radius:0.5em;
+    margin-top:130px;
+    //background-color:#39c;
+    height:270px;
+    width:40%;
+    font-size:26px;
+    background-image:url("../images/ttt.jpg");
+}

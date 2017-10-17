@@ -1,0 +1,34 @@
+
+<div id="formDiv" style="margin-top:20px;margin-left:50px;height:550px;width:70%;font-size:18px;position:relative;float:left;">
+<div class="container">
+<form method="post" id="saveform" name="saveform" action="/index.php?s=/index/parse.html">
+<input type="hidden" name="fields" id="fields" value="0">
+<div style="width:98%;height:500px;margin-top:20px;border:3px solid grey">
+  <p style="margin-top:10px;font-size:30px" >表单名称：<input type="text" id="formType"></input></p>
+  <hr style="height:5px;border:none;border-top:5px ridge green;"/>
+  <p style="margin-top:10px;font-size:30px" >表单设计：</p>
+ <div >
+<p style="left:30px">
+        <button type="button" ng-click="leipiFormDesign.exec('text');" class="btn btn-info">文本框</button>
+        <button type="button" ng-click="leipiFormDesign.exec('textarea');" class="btn btn-info">多行文本</button>
+        <button type="button" ng-click="leipiFormDesign.exec('select');" class="btn btn-info">下拉菜单</button>
+        <button type="button" ng-click="leipiFormDesign.exec('radios');" class="btn btn-info">单选框</button>
+        <button type="button" ng-click="leipiFormDesign.exec('checkboxs');" class="btn btn-info">复选框</button>       
+        <button type="button" ng-click="leipiFormDesign.exec('listctrl');" class="btn btn-info">列表控件</button>
+        <button type="button" ng-click="leipiFormDesign.findForm();" class="btn btn-info">form</button>
+</p>
+</div>
+<!-- afsddddddddd -->
+<div >
+<script id="myFormDesign" type="text/plain" style="width:99.8%;">
+</script>
+</div>   
+</div>
+<!-- afsddddddddd -->
+<div class="row">
+</div><!--end row-->
+</form>
+</div><!--end container-->
+
+
+</div>
